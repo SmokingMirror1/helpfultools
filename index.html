@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Style/portfolio-home.css">
+        <script src="java-script/code-helpful.js"></script>
+        <title>Ella Gillentine's Portfolio</title>
+        <link rel="icon" type="image/png" href="graphic-design/icon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header id="top-of-screen">
+            <img src="graphic-design/Logo.jpg" id="logo" alt="Logo of a Swift Fox in a Dark Blue Color"/>
+            <h1 id="name1">Helpful Tools</h1> 
+        </header>
+        <nav class="pages">
+            <a href="home-page.html">Home</a>
+            <a href="awards-page.html" >Award Winning Art</a>
+            <a href="portfolios.html">Portfolios</a>
+        </nav>
+        <div class="wall">
+            <figure>
+                <figcaption class="competition">Determine Mat Size</figcaption>
+            </figure>
+            <div>
+                <input type="button" id="getSaves" class="normalButton" value="Previous Saves">
+                <div id="allSaves"></div>
+                <input type="button" id="clear" class="normalButton" value="Clear">
+                <input type="button" id="getExamples" class="normalButton" value="Examples">
+                <img src="graphics/Examples-02.png" id="example1" class="examples" alt="A map of what measurments relat to what">
+                <img src="graphics/Examples-01.png" id="example2" class="examples" alt="A map of what measurments relat to what">
+            </div>
+            <section id="calculator">
+                <form>
+                    <label for="type">What are you Calculating:</label>
+                    <select name="type" id="type">
+                        <option class="dropDown" value="margin">Boarder</option>
+                        <option class="dropDown" value="frame">Mat</option>
+                        <option class="dropDown" value="photo">Photo</option>
+                    </select>
+                </form>
+                <br>
+                <input type="text" class="input-box" placeholder="width of photo in inches" id="photoWidth">
+                <input type="text" class="input-box" placeholder="height of photo in inches" id="photoHeight">
+                <br>
+                <input type="text" class="input-box" placeholder="width of mat in inches" id="frameWidth">
+                <input type="text" class="input-box" placeholder="height of mat in inches" id="frameHeight">
+                <br>
+                <input type="text" class="input-box" placeholder="width of border in inches" id="marginWidth">
+                <input type="text" class="input-box" placeholder="height of border in inches" id="marginHeight">
+                <br>
+                <input type="submit" id="button" class="normalButton" value="Calculate">
+                <div id="answer"></div>
+                <input type="button" id="openSave" class="normalButton" value="Save">
+            </section>
+        </div>
+        <div class="popUp">
+            <section>
+                <input type="text" class="input-box" placeholder="new save" id="saveName">
+                <h3 id="warning">Please chose a different name for every save</h3>
+                <input type="button" id="save" class="normalButton" value="Save">
+                <h3>*This only saves for this session</h3>
+            </section>
+        </div>
+    </body>
+</html>
